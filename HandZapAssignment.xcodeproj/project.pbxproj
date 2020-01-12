@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1B1177FA23C9A48E00877B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1177F923C9A48E00877B3C /* AppDelegate.swift */; };
-		1B1177FC23C9A48E00877B3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1177FB23C9A48E00877B3C /* ViewController.swift */; };
+		1B1177FC23C9A48E00877B3C /* FormsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1177FB23C9A48E00877B3C /* FormsListViewController.swift */; };
 		1B1177FF23C9A48E00877B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1177FD23C9A48E00877B3C /* Main.storyboard */; };
 		1B11780223C9A48E00877B3C /* HandZapAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B11780023C9A48E00877B3C /* HandZapAssignment.xcdatamodeld */; };
 		1B11780423C9A49000877B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B11780323C9A49000877B3C /* Assets.xcassets */; };
 		1B11780723C9A49000877B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B11780523C9A49000877B3C /* LaunchScreen.storyboard */; };
 		1B11781223C9A49000877B3C /* HandZapAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11781123C9A49000877B3C /* HandZapAssignmentTests.swift */; };
+		1B11781D23C9FC1C00877B3C /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11781C23C9FC1C00877B3C /* FormData.swift */; };
+		1B11782023CA022700877B3C /* FormListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11781F23CA022700877B3C /* FormListViewModel.swift */; };
+		1B11782323CA03AC00877B3C /* FormDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11782223CA03AC00877B3C /* FormDataTableViewCell.swift */; };
+		1B11782623CA058000877B3C /* NewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11782523CA058000877B3C /* NewFormViewController.swift */; };
+		1BF0A9E723CB551B008881C8 /* FormDataMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0A9E523CB551B008881C8 /* FormDataMO+CoreDataClass.swift */; };
+		1BF0A9EA23CB55C8008881C8 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0A9E923CB55C8008881C8 /* FormViewModel.swift */; };
+		1BF0A9EC23CB6B6E008881C8 /* FormDataMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0A9EB23CB6B6E008881C8 /* FormDataMO+CoreDataProperties.swift */; };
+		1BF0A9EE23CB7B1C008881C8 /* FormDataUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0A9ED23CB7B1C008881C8 /* FormDataUnitTests.swift */; };
+		1BF0A9EF23CB7B28008881C8 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11781C23C9FC1C00877B3C /* FormData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +38,7 @@
 /* Begin PBXFileReference section */
 		1B1177F623C9A48E00877B3C /* HandZapAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandZapAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1177F923C9A48E00877B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B1177FB23C9A48E00877B3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B1177FB23C9A48E00877B3C /* FormsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsListViewController.swift; sourceTree = "<group>"; };
 		1B1177FE23C9A48E00877B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B11780123C9A48E00877B3C /* HandZapAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HandZapAssignment.xcdatamodel; sourceTree = "<group>"; };
 		1B11780323C9A49000877B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +47,14 @@
 		1B11780D23C9A49000877B3C /* HandZapAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandZapAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B11781123C9A49000877B3C /* HandZapAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandZapAssignmentTests.swift; sourceTree = "<group>"; };
 		1B11781323C9A49000877B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B11781C23C9FC1C00877B3C /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		1B11781F23CA022700877B3C /* FormListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListViewModel.swift; sourceTree = "<group>"; };
+		1B11782223CA03AC00877B3C /* FormDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataTableViewCell.swift; sourceTree = "<group>"; };
+		1B11782523CA058000877B3C /* NewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFormViewController.swift; sourceTree = "<group>"; };
+		1BF0A9E523CB551B008881C8 /* FormDataMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormDataMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1BF0A9E923CB55C8008881C8 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		1BF0A9EB23CB6B6E008881C8 /* FormDataMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormDataMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1BF0A9ED23CB7B1C008881C8 /* FormDataUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +96,10 @@
 		1B1177F823C9A48E00877B3C /* HandZapAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				1B11782123CA038300877B3C /* CustomCell */,
+				1B11781E23CA01F800877B3C /* Models */,
 				1B1177F923C9A48E00877B3C /* AppDelegate.swift */,
-				1B1177FB23C9A48E00877B3C /* ViewController.swift */,
+				1B11782423CA053D00877B3C /* ViewControllers */,
 				1B1177FD23C9A48E00877B3C /* Main.storyboard */,
 				1B11780323C9A49000877B3C /* Assets.xcassets */,
 				1B11780523C9A49000877B3C /* LaunchScreen.storyboard */,
@@ -95,8 +114,38 @@
 			children = (
 				1B11781123C9A49000877B3C /* HandZapAssignmentTests.swift */,
 				1B11781323C9A49000877B3C /* Info.plist */,
+				1BF0A9ED23CB7B1C008881C8 /* FormDataUnitTests.swift */,
 			);
 			path = HandZapAssignmentTests;
+			sourceTree = "<group>";
+		};
+		1B11781E23CA01F800877B3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BF0A9E523CB551B008881C8 /* FormDataMO+CoreDataClass.swift */,
+				1BF0A9EB23CB6B6E008881C8 /* FormDataMO+CoreDataProperties.swift */,
+				1B11781C23C9FC1C00877B3C /* FormData.swift */,
+				1B11781F23CA022700877B3C /* FormListViewModel.swift */,
+				1BF0A9E923CB55C8008881C8 /* FormViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B11782123CA038300877B3C /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B11782223CA03AC00877B3C /* FormDataTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		1B11782423CA053D00877B3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B1177FB23C9A48E00877B3C /* FormsListViewController.swift */,
+				1B11782523CA058000877B3C /* NewFormViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +249,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1177FC23C9A48E00877B3C /* ViewController.swift in Sources */,
+				1BF0A9EA23CB55C8008881C8 /* FormViewModel.swift in Sources */,
+				1B1177FC23C9A48E00877B3C /* FormsListViewController.swift in Sources */,
+				1B11782323CA03AC00877B3C /* FormDataTableViewCell.swift in Sources */,
+				1B11782623CA058000877B3C /* NewFormViewController.swift in Sources */,
 				1B11780223C9A48E00877B3C /* HandZapAssignment.xcdatamodeld in Sources */,
 				1B1177FA23C9A48E00877B3C /* AppDelegate.swift in Sources */,
+				1B11781D23C9FC1C00877B3C /* FormData.swift in Sources */,
+				1B11782023CA022700877B3C /* FormListViewModel.swift in Sources */,
+				1BF0A9E723CB551B008881C8 /* FormDataMO+CoreDataClass.swift in Sources */,
+				1BF0A9EC23CB6B6E008881C8 /* FormDataMO+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B11781223C9A49000877B3C /* HandZapAssignmentTests.swift in Sources */,
+				1BF0A9EE23CB7B1C008881C8 /* FormDataUnitTests.swift in Sources */,
+				1BF0A9EF23CB7B28008881C8 /* FormData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
